@@ -1,0 +1,7 @@
+DJANGO_SETTINGS_MODULE=main.settings.dev
+DJANGO_SECRETKEY=your-django-secret-key
+POSTGRES_DB=your-db-name
+POSTGRES_USER=your-user-name
+POSTGRES_PASSWORD=your-password
+POSTGRES_HOST=your-host
+POSTGRES_PORT=your-port
