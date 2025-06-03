@@ -1,0 +1,24 @@
+services:
+
+  web:
+    image: johnpaulcurada/datara:latest
+    env_file: env/web
+    working_dir: /app
+    command: python manage.py runserver 0.0.0.0:8000
+    ports:
+      - 8000:8000
+    depends_on:
+      - db
+    volumes:
+      - ./src:/app
+      - ./volume:/volume
+      - ./staticfiles:/staticfiles
+
+  db:
+    image: postgres:16
+    env_file: env/db
+    restart: always
+    ports:
+      - 5432:5432
+    volumes:
+      - ./volume/data/db:/var/lib/postgresql/data

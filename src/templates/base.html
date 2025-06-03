@@ -1,0 +1,53 @@
+{% load static %}
+{% load i18n %}
+<!doctype html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="DaTARA: DataCamp Application Tracker for Admin Reports & Analytics - A comprehensive database management system for processing scholarship applications, managing scholar records, and providing demographic analytics for DataCamp Donates program administrators.">
+      <meta name="keywords" content="DataCamp, scholarship management, application tracker, database management system, DBMS, admin portal, scholar records, demographic analytics, education technology, data literacy, scholarship processing, academic administration, student management system">      
+      <title>{% block head_title %}{% endblock head_title %}</title>
+      <link rel="stylesheet" href="{% static 'node_modules/purecss/build/pure-min.css' %}">
+
+      {% block head_extra %}
+      {% endblock head_extra %}
+  </head>
+  <body>
+    <!-- Modern Footer -->
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Services</h3>
+            <ul class="footer-links">
+              <li><a href="/application/">Schoolarship Application</a></li>
+              <li><a href="/management/">Partner Organization Management</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-section">
+            <h3>Users</h3>
+            <ul class="footer-links">
+              <li><a href="/for-partner-orgs">For Partner Organizations</a></li>
+              <li><a href="/for-scholars/">For Scholars</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-section">
+            <h3>DaTARA</h3>
+            <ul class="footer-links">
+                <li><a href="/faq/">FAQs</a></li>
+              <li><a href="/privacy-policy/">Privacy Policy</a></li>
+              <li><a href="/contact/">About Us</a></li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="footer-bottom">
+          &copy; <script>document.write(new Date().getFullYear())</script> DataCamp | All Rights Reserved
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
