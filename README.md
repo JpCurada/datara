@@ -224,3 +224,145 @@ docker-compose -f docker-compose-dev.yml exec web python manage.py [command]
 - **Port conflicts**: If you get a "port is already allocated" error, change the port mapping in `docker-compose-dev.yml`
 - **Database connection issues**: Ensure the database service is fully started before launching the web service
 - **Missing environment files**: Check that you've received and properly placed the `env/db` and `env/web` files
+
+
+## Task & Development Workflow
+
+We use **task tracking** to manage development work and assignments. Follow these steps when working on tasks:
+
+#### 2. Create a Branch
+
+- Use the [branching convention](#branching--git-workflow).
+- Start coding!
+
+#### 3. Submit a Pull Request (PR)
+
+- Reference the task in the PR description (e.g., `Completes Task #123`).
+- Mark the task as "In Review" on your tracking system.
+
+#### 4. Code Review & Merge
+
+- Once approved, the PR gets merged into `develop`.
+- The task is marked as "Completed."
+
+---
+
+## Branching & Git Workflow
+
+### Branch Naming Convention
+
+| Branch Type     | Naming Convention               | Example                 |
+| --------------- | ------------------------------- | ----------------------- |
+| **Main**        | `main`                          | `main`                  |
+| **Development** | `dev`                           | `dev`                   |
+| **Feature**     | `feature/TASK-ID-feature-name`  | `feature/123-add-auth`  |
+| **Bugfix**      | `bugfix/TASK-ID-bug-name`       | `bugfix/234-fix-footer` |
+| **Hotfix**      | `hotfix/TASK-ID-critical-fix`   | `hotfix/345-fix-login`  |
+
+#### 1. Switch to develop branch
+
+```bash
+git checkout dev
+git pull origin dev
+```
+
+#### 2. Create a feature branch linked to a task
+
+```bash
+git checkout -b feature/TASK-ID-feature-name
+```
+
+Example:
+
+```bash
+git checkout -b feature/123-add-login-auth
+```
+
+#### 3. Make your changes in the code
+
+#### 4. Once you're done with your changes, commit
+
+```bash
+git add .
+git commit -m "feat(auth): add login authentication (Completes Task #123)"
+```
+
+#### 5. Push to remote branch
+
+```bash
+git push origin feature/TASK-ID-feature-name
+```
+
+#### 6. Create a pull request (PR)
+
+- Go to your repository
+- Open a new PR from feature/TASK-ID-feature-name → develop
+- Use the [PR Template](#pull-request-description-format) below
+
+---
+
+## Commit Message Guidelines
+
+### Commit Message Format
+
+```
+<type>(<scope>): <description>
+```
+
+### Allowed Commit Types
+
+This project follows [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/).
+
+| Type         | Description                                           |
+| ------------ | ----------------------------------------------------- |
+| **feat**     | A new feature                                         |
+| **fix**      | A bug fix                                             |
+| **docs**     | Documentation changes                                 |
+| **style**    | Code style changes (formatting, etc.)                |
+| **refactor** | Code changes that neither fix a bug nor add a feature |
+| **perf**     | Performance improvements                              |
+| **test**     | Adding or modifying tests                             |
+| **chore**    | Maintenance and other minor tasks                     |
+
+#### Examples
+
+```bash
+git commit -m "feat(auth): add user authentication with JWT"
+git commit -m "fix(navbar): resolve mobile responsiveness issue"
+git commit -m "docs(readme): update contribution guide"
+```
+
+---
+
+## 📋 Pull Request Guidelines
+
+### PR Title Format:
+
+```
+<type>(<scope>): <short description>
+```
+
+Example
+
+```
+feat(auth): add user login functionality
+fix(navbar): resolve mobile responsiveness issue
+```
+
+### PR Description Template
+
+```
+✨ What's New?
+- [x] Briefly explain what was added
+
+📷 Screenshots of application (IMPORTANT)
+_Add relevant screenshots/gifs_
+
+🔗 Related Tasks
+Completes Task #TASK_NUMBER
+
+✅ Checklist (from task)
+- [ ] Code follows project conventions
+- [ ] Linted & formatted
+- [ ] Tested locally
+```
