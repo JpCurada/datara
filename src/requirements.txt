@@ -1,0 +1,16 @@
+boto3
+cryptography
+django
+django-allauth[socialaccount]
+django-storages
+djangorestframework
+psycopg2-binary
+py-emails
+python-dotenv
+PyJWT
+qrcode[pil]
+requests
+requests-cache
+tenacity
+thefuzz
+gunicorn
