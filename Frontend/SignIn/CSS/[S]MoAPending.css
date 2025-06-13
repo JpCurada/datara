@@ -1,0 +1,91 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #2ECC71;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 1rem;
+    margin: 0;
+    box-sizing: border-box;
+    color: #FFFFFF; /* Added from original to maintain color */
+    text-align: center; /* Added from original to maintain text alignment */
+    line-height: 1.5; /* Added from original to maintain line height */
+}
+
+.container {
+    text-align: center;
+    color: #ffffff;
+    max-width: 48rem;
+    width: 100%;
+}
+
+.message-text {
+    font-size: 2.25rem;
+    line-height: 3rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+@media (min-width: 640px) {
+    .message-text {
+        font-size: 2.5rem; /* Original 2.5rem */
+    }
+}
+
+@media (min-width: 768px) {
+    .message-text {
+        font-size: 3rem; /* Adjusted for larger screens, similar to example's main-heading */
+    }
+}
+
+.home-button {
+    background-color: #1A1A1A;
+    color: #FFFFFF;
+    padding: 0.9375rem 1.875rem; /* Equivalent to 15px 30px */
+    border: none;
+    border-radius: 0.625rem; /* Equivalent to 10px */
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.home-button:hover {
+    background-color: #333333;
+    transform: translateY(-2px);
+}
+
+.home-button:active {
+    background-color: #000000;
+    transform: translateY(0);
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+    .message-text {
+        font-size: 2rem;
+        margin-bottom: 1.875rem; /* Equivalent to 30px */
+    }
+    .home-button {
+        padding: 0.75rem 1.5625rem; /* Equivalent to 12px 25px */
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .message-text {
+        font-size: 1.5rem;
+        margin-bottom: 1.5625rem; /* Equivalent to 25px */
+    }
+    .home-button {
+        padding: 0.625rem 1.25rem; /* Equivalent to 10px 20px */
+        font-size: 0.9rem;
+    }
+    .container {
+        padding: 0.9375rem; /* Equivalent to 15px */
+        margin: 0 0.9375rem; /* Equivalent to 0 15px */
+    }
+}

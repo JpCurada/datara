@@ -1,0 +1,28 @@
+.privacy-section {
+    margin-bottom: 40px;
+}
+
+.privacy-section p {
+    margin-bottom: 15px;
+    color: #4b5563;
+}
+
+.privacy-section ul {
+    margin: 15px 0;
+    padding-left: 30px;
+}
+
+.privacy-section li {
+    margin-bottom: 8px;
+    color: #4b5563;
+}
+
+.partner-section, .email-section {
+    margin-bottom: 40px;
+}
+
+.help-text {
+    font-size: 14px;
+    color: #6b7280;
+    margin-bottom: 15px;
+}

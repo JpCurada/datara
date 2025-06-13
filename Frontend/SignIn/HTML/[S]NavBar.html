@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form | DaTARA</title>
+    <!--<link rel = "icon" type = "image/jpg" href = "pichere">-->
+    <link rel="stylesheet" href="/Scholar/SignIn/CSS/[S]NavBar.css">
+    <link rel="stylesheet" href="/Scholar/SignIn/CSS/[S]CommonStyles.css">
+    <link rel="stylesheet" href="/Scholar/SignIn/CSS/[S]Step1.css">
+    <link rel="stylesheet" href="/Scholar/SignIn/CSS/[S]Step2.css">
+    <link rel="stylesheet" href="/Scholar/SignIn/CSS/[S]Step3.css">
+    <link rel="stylesheet" href="/Scholar/SignIn/CSS/[S]Step4.css">
+    <link rel="stylesheet" href="/Scholar/SignIn/CSS/[S]Step5.css">
+    <link rel="stylesheet" href="/Scholar/SignIn/CSS/[S]Step6.css">
+    <link rel="stylesheet" href="/Scholar/SignIn/CSS/[S]Step7.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <div class="logo-icon">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                        <rect width="40" height="40" rx="8" fill="#22C55E"/>
+                        <path d="M10 15L20 25L30 15" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <span class="logo-text">DaTARA</span>
+            </div>
+            <h1 class="form-title">Application Form</h1>
+        </header>
+
+        <!-- Step Navigation -->
+        <nav class="step-nav">
+            <button class="step-btn active" data-step="1">Partner Organization</button>
+            <button class="step-btn" data-step="2">Personal Information</button>
+            <button class="step-btn" data-step="3">Address</button>
+            <button class="step-btn" data-step="4">Education</button>
+            <button class="step-btn" data-step="5">Interests</button>
+            <button class="step-btn" data-step="6">Demographic</button>
+            <button class="step-btn" data-step="7">Confirmation</button>
+        </nav>
+
+        <!-- Form Content -->
+        <main class="form-content" id="form-container">
+            <!-- Steps will be dynamically loaded here -->
+        </main>
+
+        <!-- Navigation Buttons -->
+        <div class="form-navigation">
+            <button type="button" class="nav-btn back-btn" id="back-btn">Back</button>
+            <button type="button" class="nav-btn next-btn" id="next-btn">Next</button>
+            <button type="submit" class="nav-btn submit-btn" id="submit-btn" style="display: none;">Submit</button>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                        <rect width="40" height="40" rx="8" fill="#22C55E"/>
+                        <path d="M10 15L20 25L30 15" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="footer-info">
+                    <h3>Contact Us:</h3>
+                    <p>datara@gmail.com</p>
+                    <p>datacamp@gmail.com</p>
+                </div>
+                <div class="footer-social">
+                    <div class="social-item">
+                        <span>📘</span>
+                        <span>DaTARA</span>
+                    </div>
+                    <div class="social-item">
+                        <span>📷</span>
+                        <span>da.TARA</span>
+                    </div>
+                    <div class="social-item">
+                        <span>💼</span>
+                        <span>DaTARA</span>
+                    </div>
+                </div>
+                <div class="footer-phone">
+                    <span>📞</span>
+                    <span>135-888-2033</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="/Scholar/SignIn/JS/[S]MainSignUp.js"></script>
+    <script src="/Scholar/SignIn/JS/[S]ValidatorSignUp.js"></script>
+    <script src="/Scholar/SignIn/JS/[S]TransitionSignUp.js"></script>
+</body>
+</html>

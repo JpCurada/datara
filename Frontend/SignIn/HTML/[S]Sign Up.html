@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DaTARA - Application Form</title>
+    <link rel="stylesheet" href="[S]Sign Up.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <div class="logo-icon">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                        <rect width="40" height="40" rx="8" fill="#22C55E"/>
+                        <path d="M10 15L20 25L30 15" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <span class="logo-text">DaTARA</span>
+            </div>
+            <h1 class="form-title">Application Form</h1>
+        </header>
+
+        <!-- Step Navigation -->
+        <nav class="step-nav">
+            <button class="step-btn active" data-step="1">Partner Organization</button>
+            <button class="step-btn" data-step="2">Personal Information</button>
+            <button class="step-btn" data-step="3">Address</button>
+            <button class="step-btn" data-step="4">Education</button>
+            <button class="step-btn" data-step="5">Interests</button>
+            <button class="step-btn" data-step="6">Demographic</button>
+            <button class="step-btn" data-step="7">Confirmation</button>
+        </nav>
+
+        <!-- Form Content -->
+        <main class="form-content">
+            <!-- Step 1: Partner Organization -->
+            <div class="step-content active" id="step-1">
+                <div class="step-header">
+                    <h2>Data Privacy and Agreement</h2>
+                </div>
+                
+                <div class="privacy-section">
+                    <p>By using this application, you agree to the collection and use of your information as described in our Privacy Policy.</p>
+                    
+                    <p>We only collect the necessary data to:</p>
+                    <ul>
+                        <li>Provide and improve our services</li>
+                        <li>Respond to your inquiries</li>
+                        <li>Keep things secure and running smoothly</li>
+                    </ul>
+                    
+                    <p>We do not sell or share your data with third parties for marketing.</p>
+                    
+                    <p>Before continuing, please confirm:</p>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="privacy-agree" name="privacy-agree">
+                        <label for="privacy-agree">I have read and agree to the Privacy Policy.</label>
+                    </div>
+                    
+                    <p>You can view the full policy <a href="#">here</a> or by clicking the link at the bottom of the page.</p>
+                </div>
+
+                <div class="partner-section">
+                    <h3>Partner Organization</h3>
+                    <p>Select one partner organization you are in:</p>
+                    <p class="help-text">If you are in two or more partner organization, select the one who is most active.</p>
+                    
+                    <div class="input-group">
+                        <input type="text" id="partner-org" name="partner-org" placeholder="Google Developers Group - PUP Sta. Mesa" readonly>
+                    </div>
+                </div>
+
+                <div class="email-section">
+                    <h3>E-Mail Address</h3>
+                    <p>Enter your e-mail address:</p>
+                    <p class="help-text">Strictly one e-mail address per applicant!</p>
+                    
+                    <div class="input-group">
+                        <input type="email" id="email" name="email" placeholder="juandelacruz@gmail.com">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 2: Personal Information -->
+            <div class="step-content" id="step-2">
+                <div class="step-header">
+                    <h2>Personal Information</h2>
+                </div>
+
+                <div class="form-section">
+                    <h3>Full Name</h3>
+                    <div class="name-grid">
+                        <div class="input-group">
+                            <label for="first-name">First Name</label>
+                            <input type="text" id="first-name" name="first-name" placeholder="JUAN">
+                        </div>
+                        <div class="input-group">
+                            <label for="middle-name">Middle Name</label>
+                            <input type="text" id="middle-name" name="middle-name" placeholder="ABRAHAM">
+                        </div>
+                        <div class="input-group">
+                            <label for="last-name">Last Name</label>
+                            <input type="text" id="last-name" name="last-name" placeholder="DELA CRUZ">
+                        </div>
+                        <div class="input-group">
+                            <label for="suffix">Suffix</label>
+                            <input type="text" id="suffix" name="suffix" placeholder="N/A">
+                            <small>N/A if unavailable.</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h3>Birthday</h3>
+                    <div class="birthday-grid">
+                        <div class="input-group">
+                            <label for="birth-month">Month</label>
+                            <select id="birth-month" name="birth-month">
+                                <option value="JANUARY">JANUARY</option>
+                                <option value="FEBRUARY">FEBRUARY</option>
+                                <option value="MARCH">MARCH</option>
+                                <option value="APRIL">APRIL</option>
+                                <option value="MAY">MAY</option>
+                                <option value="JUNE">JUNE</option>
+                                <option value="JULY">JULY</option>
+                                <option value="AUGUST">AUGUST</option>
+                                <option value="SEPTEMBER">SEPTEMBER</option>
+                                <option value="OCTOBER">OCTOBER</option>
+                                <option value="NOVEMBER">NOVEMBER</option>
+                                <option value="DECEMBER">DECEMBER</option>
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <label for="birth-day">Day</label>
+                            <input type="number" id="birth-day" name="birth-day" min="1" max="31" placeholder="01">
+                        </div>
+                        <div class="input-group">
+                            <label for="birth-year">Year</label>
+                            <input type="number" id="birth-year" name="birth-year" min="1900" max="2024" placeholder="2005">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h3>Gender</h3>
+                    <div class="radio-group">
+                        <input type="radio" id="male" name="gender" value="male" checked>
+                        <label for="male">Male</label>
+                        
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                        
+                        <input type="radio" id="others" name="gender" value="others">
+                        <label for="others">Others: <input type="text" placeholder="____"></label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 3: Address -->
+            <div class="step-content" id="step-3">
+                <div class="step-header">
+                    <h2>Address</h2>
+                </div>
+
+                <div class="form-section">
+                    <div class="address-grid">
+                        <div class="input-group">
+                            <label for="country">Country</label>
+                            <input type="text" id="country" name="country" value="PHILIPPINES" readonly>
+                        </div>
+                        <div class="input-group">
+                            <label for="region">Region</label>
+                            <input type="text" id="region" name="region" value="NATIONAL CAPITAL REGION" readonly>
+                        </div>
+                        <div class="input-group">
+                            <label for="province">Province</label>
+                            <input type="text" id="province" name="province" value="METRO MANILA" readonly>
+                        </div>
+                    </div>
+
+                    <div class="address-grid">
+                        <div class="input-group">
+                            <label for="city">City</label>
+                            <input type="text" id="city" name="city" value="QUEZON CITY" readonly>
+                        </div>
+                        <div class="input-group">
+                            <label for="district">District</label>
+                            <input type="text" id="district" name="district" value="DISTRICT 1" readonly>
+                        </div>
+                        <div class="input-group">
+                            <label for="barangay">Barangay</label>
+                            <input type="text" id="barangay" name="barangay" value="BARANGAY SAN ANTONIO" readonly>
+                        </div>
+                    </div>
+
+                    <div class="address-grid">
+                        <div class="input-group">
+                            <label for="street">Street/Subdivision/Purok</label>
+                            <input type="text" id="street" name="street">
+                        </div>
+                        <div class="input-group">
+                            <label for="house-number">House Number/Building Name/ House Floor</label>
+                            <input type="text" id="house-number" name="house-number">
+                        </div>
+                        <div class="input-group">
+                            <label for="zip-code">Zip Code</label>
+                            <input type="text" id="zip-code" name="zip-code">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 4: Education -->
+            <div class="step-content" id="step-4">
+                <div class="step-header">
+                    <h2>Education Information</h2>
+                </div>
+
+                <div class="form-section">
+                    <h3>Education Status</h3>
+                    <div class="radio-group vertical">
+                        <input type="radio" id="currently-enrolled" name="education-status" value="currently-enrolled" checked>
+                        <label for="currently-enrolled">Currently Enrolled</label>
+                        
+                        <input type="radio" id="fresh-graduate" name="education-status" value="fresh-graduate">
+                        <label for="fresh-graduate">Fresh Graduate (within 2 years)</label>
+                        
+                        <input type="radio" id="graduate" name="education-status" value="graduate">
+                        <label for="graduate">Graduate (more than 2 years ago)</label>
+                        
+                        <input type="radio" id="gap-year" name="education-status" value="gap-year">
+                        <label for="gap-year">Taking a gap year/break from university</label>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <div class="education-grid">
+                        <div class="input-group">
+                            <label for="university-city">University/College City</label>
+                            <input type="text" id="university-city" name="university-city" value="MANILA" readonly>
+                        </div>
+                        <div class="input-group">
+                            <label for="university-name">University/College Name</label>
+                            <select id="university-name" name="university-name">
+                                <option value="POLYTECHNIC UNIVERSITY OF THE PHILIPPINES - MANILA">POLYTECHNIC UNIVERSITY OF THE PHILIPPINES - MANILA</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 5: Interests -->
+            <div class="step-content" id="step-5">
+                <div class="step-header">
+                    <h2>Interests</h2>
+                </div>
+
+                <div class="form-section">
+                    <div class="interests-grid">
+                        <div class="interest-group">
+                            <h3>Programming Experience Level</h3>
+                            <div class="radio-group vertical">
+                                <input type="radio" id="prog-none" name="programming-level" value="none" checked>
+                                <label for="prog-none">None</label>
+                                
+                                <input type="radio" id="prog-beginner" name="programming-level" value="beginner">
+                                <label for="prog-beginner">Beginner</label>
+                                
+                                <input type="radio" id="prog-basic" name="programming-level" value="basic">
+                                <label for="prog-basic">Basic</label>
+                                
+                                <input type="radio" id="prog-advanced" name="programming-level" value="advanced">
+                                <label for="prog-advanced">Advanced</label>
+                            </div>
+                        </div>
+
+                        <div class="interest-group">
+                            <h3>Weekly Time Commitment</h3>
+                            <div class="radio-group vertical">
+                                <input type="radio" id="time-1-2" name="time-commitment" value="1-2" checked>
+                                <label for="time-1-2">1-2 hours</label>
+                                
+                                <input type="radio" id="time-3-5" name="time-commitment" value="3-5">
+                                <label for="time-3-5">3-5 hours</label>
+                                
+                                <input type="radio" id="time-6-10" name="time-commitment" value="6-10">
+                                <label for="time-6-10">6-10 hours</label>
+                                
+                                <input type="radio" id="time-11-15" name="time-commitment" value="11-15">
+                                <label for="time-11-15">11-15 hours</label>
+                                
+                                <input type="radio" id="time-16+" name="time-commitment" value="16+">
+                                <label for="time-16+">16+ hours</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3>Data Science Experience Level</h3>
+                        <div class="radio-group vertical">
+                            <input type="radio" id="ds-none" name="data-science-level" value="none" checked>
+                            <label for="ds-none">None</label>
+                            
+                            <input type="radio" id="ds-beginner" name="data-science-level" value="beginner">
+                            <label for="ds-beginner">Beginner</label>
+                            
+                            <input type="radio" id="ds-basic" name="data-science-level" value="basic">
+                            <label for="ds-basic">Basic</label>
+                            
+                            <input type="radio" id="ds-advanced" name="data-science-level" value="advanced">
+                            <label for="ds-advanced">Advanced</label>
+                        </div>
+                    </div>
+
+                    <div class="text-areas">
+                        <div class="input-group">
+                            <label for="scholarship-reason">Why do you want this scholarship? (1000 characters)</label>
+                            <textarea id="scholarship-reason" name="scholarship-reason" maxlength="1000" placeholder="For clout."></textarea>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="career-goals">What are your career goals? (500 characters)</label>
+                            <textarea id="career-goals" name="career-goals" maxlength="500" placeholder="To pass the project."></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 6: Demographic -->
+            <div class="step-content" id="step-6">
+                <div class="step-header">
+                    <h2>Demographic</h2>
+                </div>
+
+                <div class="form-section">
+                    <div class="demographic-grid">
+                        <div class="demographic-group">
+                            <h3>Select all that apply:</h3>
+                            <div class="checkbox-group vertical">
+                                <input type="checkbox" id="unemployed" name="demographic" value="unemployed" checked>
+                                <label for="unemployed">Unemployed</label>
+                                
+                                <input type="checkbox" id="underemployed" name="demographic" value="underemployed">
+                                <label for="underemployed">Underemployed</label>
+                                
+                                <input type="checkbox" id="poverty-line" name="demographic" value="poverty-line" checked>
+                                <label for="poverty-line">Living below the poverty line</label>
+                                
+                                <input type="checkbox" id="refugees" name="demographic" value="refugees">
+                                <label for="refugees">Refugees of war/environmental disaster</label>
+                                
+                                <input type="checkbox" id="disabilities" name="demographic" value="disabilities">
+                                <label for="disabilities">People with disabilities</label>
+                                
+                                <input type="checkbox" id="students-16-26" name="demographic" value="students-16-26" checked>
+                                <label for="students-16-26">Students aged 16-26</label>
+                                
+                                <input type="checkbox" id="working-student" name="demographic" value="working-student">
+                                <label for="working-student">Working Student</label>
+                                
+                                <input type="checkbox" id="nonprofit-researchers" name="demographic" value="nonprofit-researchers">
+                                <label for="nonprofit-researchers">Nonprofit Research Scientists</label>
+                            </div>
+                        </div>
+
+                        <div class="demographic-group">
+                            <h3>Devices available</h3>
+                            <p>Select all that apply:</p>
+                            <div class="checkbox-group vertical">
+                                <input type="checkbox" id="smartphone" name="devices" value="smartphone" checked>
+                                <label for="smartphone">Smartphone</label>
+                                
+                                <input type="checkbox" id="tablet" name="devices" value="tablet">
+                                <label for="tablet">Tablet</label>
+                                
+                                <input type="checkbox" id="laptop" name="devices" value="laptop" checked>
+                                <label for="laptop">Laptop</label>
+                                
+                                <input type="checkbox" id="desktop" name="devices" value="desktop">
+                                <label for="desktop">Desktop/PC</label>
+                            </div>
+                        </div>
+
+                        <div class="demographic-group">
+                            <h3>Internet Connectivity</h3>
+                            <p>Select all that apply:</p>
+                            <div class="checkbox-group vertical">
+                                <input type="checkbox" id="mobile-data" name="internet" value="mobile-data" checked>
+                                <label for="mobile-data">Mobile Data</label>
+                                
+                                <input type="checkbox" id="wifi" name="internet" value="wifi" checked>
+                                <label for="wifi">WiFi</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 7: Confirmation -->
+            <div class="step-content" id="step-7">
+                <div class="step-header">
+                    <h2>Confirmation</h2>
+                </div>
+
+                <div class="form-section">
+                    <div class="confirmation-content">
+                        <p>By submitting this application, I confirm that all the information I have provided is true, complete, and accurate to the best of my knowledge.</p>
+                        
+                        <p>I understand that any misrepresentation of facts may result in the rejection or disqualification of my application, or revocation of any offer or opportunity granted based on it.</p>
+                        
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="confirm-details" name="confirm-details">
+                            <label for="confirm-details">I confirm that all details provided are true and I accept the terms above.</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Navigation Buttons -->
+        <div class="form-navigation">
+            <button type="button" class="nav-btn back-btn" id="back-btn">Back</button>
+            <button type="button" class="nav-btn next-btn" id="next-btn">Next</button>
+            <button type="submit" class="nav-btn submit-btn" id="submit-btn" style="display: none;">Submit</button>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                        <rect width="40" height="40" rx="8" fill="#22C55E"/>
+                        <path d="M10 15L20 25L30 15" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="footer-info">
+                    <h3>Contact Us:</h3>
+                    <p>datara@gmail.com</p>
+                    <p>datacamp@gmail.com</p>
+                </div>
+                <div class="footer-social">
+                    <div class="social-item">
+                        <span>📘</span>
+                        <span>DaTARA</span>
+                    </div>
+                    <div class="social-item">
+                        <span>📷</span>
+                        <span>da.TARA</span>
+                    </div>
+                    <div class="social-item">
+                        <span>💼</span>
+                        <span>DaTARA</span>
+                    </div>
+                </div>
+                <div class="footer-phone">
+                    <span>📞</span>
+                    <span>135-888-2033</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
