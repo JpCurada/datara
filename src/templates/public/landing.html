@@ -5,188 +5,95 @@
 
 {% block content %}
 <!-- Hero Section -->
-<section class="hero-section">
-    <div class="hero-container">
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1 class="hero-title">
-                    Democratizing Data & AI Skills
-                    <span class="highlight">Through Education</span>
-                </h1>
-                <p class="hero-description">
-                    DaTARA streamlines scholarship application processing for DataCamp Donates program, 
-                    connecting talented individuals with transformative data literacy opportunities across 
-                    200+ partner organizations worldwide.
-                </p>
-                <div class="hero-stats">
-                    <div class="stat-item">
-                        <span class="stat-number">40,000+</span>
-                        <span class="stat-label">Scholarships Gifted</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number">$15M+</span>
-                        <span class="stat-label">Value Donated</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number">200+</span>
-                        <span class="stat-label">Partner Organizations</span>
-                    </div>
-                </div>
-                <div class="hero-buttons">
-                    <a href="{% url 'public:application' %}" class="btn btn-primary">
-                        <i class="fas fa-graduation-cap"></i>
-                        Apply for Scholarship
-                    </a>
-                    <a href="{% url 'public:partner_organization' %}" class="btn btn-secondary">
-                        <i class="fas fa-handshake"></i>
-                        Become a Partner
-                    </a>
-                </div>
-            </div>
-            <div class="hero-visual">
-                <div class="hero-card">
-                    <div class="card-header">
-                        <div class="card-avatar"></div>
-                        <div class="card-info">
-                            <h4>DataCamp Scholar</h4>
-                            <p>Data Analyst Track</p>
-                        </div>
-                    </div>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="width: 75%"></div>
-                    </div>
-                    <div class="card-stats">
-                        <span>75% Complete</span>
-                        <span class="badge">Active</span>
-                    </div>
-                </div>
-            </div>
-        </div>
+<section class="hero">
+  <div class="overlay">
+    <div class="hero-text">
+      <h1>Welcome to</h1>
+      <h2> <span>DataCamp!</span></h2>
+      <p class="subtitle">Learn data and AI skills</p>
+      <p class="description">
+        Master in-demand skills in Python, ChatGPT, Power BI, and more through interactive courses, real-world projects, and certifications.
+      </p>
+      <a href = "/src/templates/account/scholar_login.html">
+        <button class="apply-now">Apply Now</button>
+      </a>
     </div>
+  </div>
+
+  <div class="stats">
+    <div class="stat-box">
+      <div><span class = "five">5,000+<br></span><small>Companies</small></div>
+      <div><span class = "three">3,000+<br></span><small>Partner Organization</small></div>
+      <div><span class = "million">17 million<br></span><small>DataCamp Learners</small></div>
+      <div><span class = "country">180+<br></span><small>Countries</small></div>
+    </div>
+  </div>
 </section>
 
-<!-- Features Section -->
-<section class="features-section">
-    <div class="container">
-        <div class="section-header">
-            <h2 class="section-title">Transforming Scholarship Management</h2>
-            <p class="section-description">
-                Our comprehensive platform streamlines every aspect of scholarship administration,
-                from application processing to scholar success tracking.
-            </p>
-        </div>
-        
-        <div class="features-grid">
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <i class="fas fa-rocket"></i>
-                </div>
-                <h3>Streamlined Applications</h3>
-                <p>Automated processing reduces administrative overhead while ensuring fair and efficient scholarship distribution.</p>
-            </div>
-            
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <i class="fas fa-shield-alt"></i>
-                </div>
-                <h3>Secure Data Management</h3>
-                <p>Enterprise-grade security ensures applicant data privacy and compliance with international standards.</p>
-            </div>
-            
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <i class="fas fa-chart-line"></i>
-                </div>
-                <h3>Analytics & Insights</h3>
-                <p>Comprehensive reporting tools provide actionable insights into program effectiveness and demographic reach.</p>
-            </div>
-            
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <i class="fas fa-users"></i>
-                </div>
-                <h3>Community Building</h3>
-                <p>Connect scholars and administrators in a supportive ecosystem that fosters continuous learning and growth.</p>
-            </div>
-            
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <i class="fas fa-globe"></i>
-                </div>
-                <h3>Global Reach</h3>
-                <p>Supporting educational institutions worldwide in their mission to democratize data literacy skills.</p>
-            </div>
-            
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <i class="fas fa-certificate"></i>
-                </div>
-                <h3>Certification Tracking</h3>
-                <p>Monitor scholar progress and celebrate achievements with integrated certification management.</p>
-            </div>
-        </div>
-    </div>
+ 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</body>
+<!-- Partner Section -->
+<section class="partners">
+  <div class="partners-text">
+    <h2><strong>Partnering for impact</strong>, <span>we empower change together</span></h2>
+    <p>We collaborate with organizations that share our mission and values, creating lasting impact through shared goals and collective action. Together, we drive sustainable solutions and empower communities for a better tomorrow.</p>
+  </div>
+  <div class="partner-logos">
+    <img src="google-partner.png" alt="Google Partner" />
+    <img src="aws-logo.png" alt="AWS Logo" />
+    <img src="university1.png" alt="University Logo 1" />
+    <img src="university2.png" alt="University Logo 2" />
+  </div>
 </section>
 
-<!-- How It Works Section -->
-<section class="how-it-works-section">
-    <div class="container">
-        <div class="section-header">
-            <h2 class="section-title">How DaTARA Works</h2>
-            <p class="section-description">
-                Simple, efficient, and transparent scholarship management in three easy steps.
-            </p>
-        </div>
-        
-        <div class="steps-container">
-            <div class="step-item">
-                <div class="step-number">1</div>
-                <div class="step-content">
-                    <h3>Apply</h3>
-                    <p>Submit your scholarship application through our streamlined online form with all required documentation.</p>
-                </div>
-            </div>
-            
-            <div class="step-connector"></div>
-            
-            <div class="step-item">
-                <div class="step-number">2</div>
-                <div class="step-content">
-                    <h3>Review</h3>
-                    <p>Partner organizations review applications using our comprehensive admin dashboard and analytics tools.</p>
-                </div>
-            </div>
-            
-            <div class="step-connector"></div>
-            
-            <div class="step-item">
-                <div class="step-number">3</div>
-                <div class="step-content">
-                    <h3>Learn</h3>
-                    <p>Approved scholars access DataCamp courses and join a global community of data professionals.</p>
-                </div>
-            </div>
-        </div>
+<!-- Courses Section -->
+<section class="courses">
+  <h2 class="course-heading">
+    A path for every goal, <span>courses to follow and enroll!</span>
+  </h2>
+  <div class="course-cards">
+    <div class="card green">
+      <h3>Introduction to Python</h3>
+      <p><small>🟩 Beginner • ⏱ 4 hours</small></p>
+      <p>Master the basics of data analysis with Python in just four hours. This online course will introduce the Python interface and explore popular packages.</p>
+      <a href="#">See More →</a>
     </div>
-</section>
-
-<!-- CTA Section -->
-<section class="cta-section">
-    <div class="container">
-        <div class="cta-content">
-            <h2>Ready to Start Your Data Journey?</h2>
-            <p>Join thousands of scholars worldwide who are building essential data and AI skills through DataCamp's scholarship program.</p>
-            <div class="cta-buttons">
-                <a href="{% url 'public:application' %}" class="btn btn-primary btn-large">
-                    <i class="fas fa-play"></i>
-                    Start Your Application
-                </a>
-                <a href="{% url 'public:faq' %}" class="btn btn-outline btn-large">
-                    <i class="fas fa-question-circle"></i>
-                    Learn More
-                </a>
-            </div>
-        </div>
+    <div class="card navy">
+      <h3>Introduction to SQL</h3>
+      <p><small>🟦 Beginner • ⏱ 2 hours</small></p>
+      <p>Learn how to create and query relational databases using SQL in just two hours.</p>
+      <a href="#">See More →</a>
     </div>
+    <div class="card green">
+      <h3>Introduction to Excel</h3>
+      <p><small>🟩 Beginner • ⏱ 4 hours</small></p>
+      <p>Master the Excel basics and learn to use this spreadsheet tool to conduct impactful analysis.</p>
+      <a href="#">See More →</a>
+    </div>
+    <div class="card navy">
+      <h3>Understanding Artificial Intelligence</h3>
+      <p><small>🟦 Beginner • ⏱ 4 hours</small></p>
+      <p>Learn the basic concepts of Artificial Intelligence, such as machine learning, deep learning, NLP, generative AI, and more.</p>
+      <a href="#">See More →</a>
+    </div>
+    <div class="card green">
+      <h3>Introduction to Power BI</h3>
+      <p><small>🟩 Beginner • ⏱ 4 hours</small></p>
+      <p>Master the Power BI basics and learn to use the data visualization software to build impactful reports.</p>
+      <a href="#">See More →</a>
+    </div>
+    <div class="card navy">
+      <h3>Introduction to Tableau</h3>
+      <p><small>🟦 Beginner • ⏱ 6 hours</small></p>
+      <p>Start your Tableau journey with our Introduction to Tableau course. Discover Tableau basics such as its features and dashboards.</p>
+      <a href="#">See More →</a>
+    </div>
+  </div>
 </section>
 {% endblock content %}
