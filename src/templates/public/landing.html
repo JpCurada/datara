@@ -1,0 +1,192 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head_title %}DaTARA - DataCamp Application Tracker for Admin Reports & Analytics{% endblock head_title %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="hero-container">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    Democratizing Data & AI Skills
+                    <span class="highlight">Through Education</span>
+                </h1>
+                <p class="hero-description">
+                    DaTARA streamlines scholarship application processing for DataCamp Donates program, 
+                    connecting talented individuals with transformative data literacy opportunities across 
+                    200+ partner organizations worldwide.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">40,000+</span>
+                        <span class="stat-label">Scholarships Gifted</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">$15M+</span>
+                        <span class="stat-label">Value Donated</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">200+</span>
+                        <span class="stat-label">Partner Organizations</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="{% url 'public:application' %}" class="btn btn-primary">
+                        <i class="fas fa-graduation-cap"></i>
+                        Apply for Scholarship
+                    </a>
+                    <a href="{% url 'public:partner_organization' %}" class="btn btn-secondary">
+                        <i class="fas fa-handshake"></i>
+                        Become a Partner
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-card">
+                    <div class="card-header">
+                        <div class="card-avatar"></div>
+                        <div class="card-info">
+                            <h4>DataCamp Scholar</h4>
+                            <p>Data Analyst Track</p>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 75%"></div>
+                    </div>
+                    <div class="card-stats">
+                        <span>75% Complete</span>
+                        <span class="badge">Active</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section class="features-section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Transforming Scholarship Management</h2>
+            <p class="section-description">
+                Our comprehensive platform streamlines every aspect of scholarship administration,
+                from application processing to scholar success tracking.
+            </p>
+        </div>
+        
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-rocket"></i>
+                </div>
+                <h3>Streamlined Applications</h3>
+                <p>Automated processing reduces administrative overhead while ensuring fair and efficient scholarship distribution.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>Secure Data Management</h3>
+                <p>Enterprise-grade security ensures applicant data privacy and compliance with international standards.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3>Analytics & Insights</h3>
+                <p>Comprehensive reporting tools provide actionable insights into program effectiveness and demographic reach.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3>Community Building</h3>
+                <p>Connect scholars and administrators in a supportive ecosystem that fosters continuous learning and growth.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-globe"></i>
+                </div>
+                <h3>Global Reach</h3>
+                <p>Supporting educational institutions worldwide in their mission to democratize data literacy skills.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-certificate"></i>
+                </div>
+                <h3>Certification Tracking</h3>
+                <p>Monitor scholar progress and celebrate achievements with integrated certification management.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- How It Works Section -->
+<section class="how-it-works-section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">How DaTARA Works</h2>
+            <p class="section-description">
+                Simple, efficient, and transparent scholarship management in three easy steps.
+            </p>
+        </div>
+        
+        <div class="steps-container">
+            <div class="step-item">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <h3>Apply</h3>
+                    <p>Submit your scholarship application through our streamlined online form with all required documentation.</p>
+                </div>
+            </div>
+            
+            <div class="step-connector"></div>
+            
+            <div class="step-item">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <h3>Review</h3>
+                    <p>Partner organizations review applications using our comprehensive admin dashboard and analytics tools.</p>
+                </div>
+            </div>
+            
+            <div class="step-connector"></div>
+            
+            <div class="step-item">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <h3>Learn</h3>
+                    <p>Approved scholars access DataCamp courses and join a global community of data professionals.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+    <div class="container">
+        <div class="cta-content">
+            <h2>Ready to Start Your Data Journey?</h2>
+            <p>Join thousands of scholars worldwide who are building essential data and AI skills through DataCamp's scholarship program.</p>
+            <div class="cta-buttons">
+                <a href="{% url 'public:application' %}" class="btn btn-primary btn-large">
+                    <i class="fas fa-play"></i>
+                    Start Your Application
+                </a>
+                <a href="{% url 'public:faq' %}" class="btn btn-outline btn-large">
+                    <i class="fas fa-question-circle"></i>
+                    Learn More
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock content %}
