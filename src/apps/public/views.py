@@ -50,3 +50,4 @@ def landing_page(request):
         'partner_orgs': '200+',
     }
     return render(request, 'public/landing.html', context)
+

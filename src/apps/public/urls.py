@@ -9,4 +9,3 @@ urlpatterns = [
     path('partner-organization/', views.PartnerOrganizationPageView.as_view(), name='partner_organization'),
     path('faq/', views.FAQPageView.as_view(), name='faq'),
 ]
-

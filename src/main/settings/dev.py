@@ -142,6 +142,6 @@ MEDIA_ROOT = BASE_DIR / "media"
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 # Login URLs
-LOGIN_URL = '/account/admin/login/'
-LOGIN_REDIRECT_URL = '/org-admin/'
+LOGIN_URL = '/account/scholar-login/'
+LOGIN_REDIRECT_URL = '/scholar/'
 LOGOUT_REDIRECT_URL = '/'
