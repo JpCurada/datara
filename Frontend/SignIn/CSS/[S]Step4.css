@@ -1,0 +1,19 @@
+/* Step 4: Education Styles */
+.education-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+}
+
+.radio-group.vertical {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+@media (max-width: 768px) {
+    .education-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+}

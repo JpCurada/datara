@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.login-section, .register-section {
+  flex: 1;
+  padding: 40px;
+}
+
+.login-section {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 80px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.logo-box {
+  width: 40px;
+  height: 40px;
+  background-color: #00dd64;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  color: #333;
+  margin: 0;
+}
+
+h2 {
+  font-size: 48px;
+  margin-bottom: 30px;
+  color: #0a1a2f;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input {
+  padding: 12px;
+  border: none;
+  background-color: #00dd64;
+  color: white;
+  font-family: monospace;
+  font-size: 16px;
+  border-radius: 25px;
+  margin-bottom: 15px;
+}
+
+.sign-in {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #00dd64;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0px 2px 3px rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+
+.forgot {
+  margin-top: 10px;
+  font-size: 12px;
+  text-decoration: underline;
+  color: #555;
+  cursor: pointer;
+}
+
+.register-section {
+  background-color: #00f87d;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 80px 40px;
+}
+
+.register-section h3 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.register-section p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #1d1d1d;
+}
+
+.register-btn {
+  background-color: #0a1a2f;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 0px 3px 4px rgba(0,0,0,0.3);
+}
+
+.bottom-text {
+  margin-top: 30px;
+  font-weight: bold;
+}

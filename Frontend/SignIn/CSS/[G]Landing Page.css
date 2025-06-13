@@ -1,0 +1,452 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Josefin Sans", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background: #fff;
+  color: #333;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  background-color: #fff;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.buttons button {
+  margin-left: 0.75rem;
+  padding: 0.5rem 1rem;
+  border-radius: 1.25rem;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.log-in {
+  border: 1px solid #333;
+  background-color: white;
+  color: #333;
+}
+
+.get-started {
+  background-color: #00c26e;
+  color: white;
+}
+
+.hero {
+  position: relative; /* Needed for absolute children like .stat-box */
+  height: 85vh;
+  background: url('/Landing\ Page\ picture.avif') center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  border-radius: 1rem;
+  margin: 0 2rem;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute; /* overlay takes full size of .hero */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 4rem;
+  padding-right: 2rem;
+  text-align: left;
+  border-radius: 1rem;
+}
+
+.hero-text h1 {
+  font-size: 5rem;
+  margin-top: -5rem;
+}
+
+.hero-text h2 {
+  font-size: 6rem;
+  margin-top: -2rem;
+}
+
+.hero-text span {
+  font-weight: bold;
+}
+
+.subtitle {
+  margin-top: -1rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+    font-family: "Alegreya";
+}
+
+.description {
+  margin: 1rem 0 1.5rem;
+  font-size: 1rem;
+  max-width: 600px;
+  font-family: "Alegreya";
+}
+
+.apply-now {
+  padding: 0.75rem 1.5rem;
+  background-color: #00c26e;
+  color: black;
+  border: none;
+  border-radius: 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.stats {
+  position: relative;
+  bottom: -30.8rem;
+  left: 19.9rem;
+}
+
+.stat-box {
+  display: flex;
+  gap: 3rem;
+  background-color: #00c26e;
+  color: white;
+  padding: 1.5rem 2rem;
+  border-radius: 1rem;
+  font-weight: bold;
+  text-align: center;
+  font-size: 25px;
+}
+
+
+.five{
+  color: black; 
+}
+
+.three{
+  color: black; 
+}
+
+.million{
+  color: black; 
+}
+
+.country{
+  color: black; 
+}
+
+/* Partner Section */
+.partners {
+  padding: 3rem 2rem;
+  background-color: #f5f7f6;
+  text-align: center;
+}
+
+.partners-text h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.partners-text span {
+  color: #6b8e89;
+  font-weight: 400;
+}
+
+.partners-text p {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  font-size: 1rem;
+  color: #333;
+}
+
+.partner-logos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.partner-logos img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 1rem;
+}
+
+/* Courses Section */
+.courses {
+  padding: 3rem 2rem;
+  text-align: center;
+  background-color: #fff;
+}
+
+.course-heading {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.course-heading span {
+  color: #6b8e89;
+}
+
+.course-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  justify-items: center;
+}
+
+.card {
+  background: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  text-align: left;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  border-left: 6px solid;
+}
+
+.card.green {
+  border-color: #00c26e;
+}
+
+.card.navy {
+  border-color: #1b2d4f;
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.card small {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.card p {
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.card a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+        /* Custom styles for the Inter font and overall look */
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensure footer stays at the bottom */
+            background-color: #f0f0f0; /* Light gray background for body */
+        }
+
+        /* Optional: Main content area to push footer down */
+        .main-content {
+            flex-grow: 1; /* Allows main content to take up available space */
+            padding: 2rem;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+
+        /* Footer styles */
+        .footer {
+            background-color: #1a202c; /* Dark background color */
+            color: white;
+            padding: 2rem 1rem; /* Vertical and horizontal padding */
+            box-shadow: 0 -4px 6px -1px rgba(0, 0, 0, 0.1), 0 -2px 4px -2px rgba(0, 0, 0, 0.06); /* Inner shadow for a lifted effect */
+            border-top-left-radius: 0.5rem; /* Rounded top-left corner */
+            border-top-right-radius: 0.5rem; /* Rounded top-right corner */
+            max-width: 1280px; /* Equivalent to max-w-7xl */
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            flex-direction: column; /* Stacks columns vertically by default */
+            align-items: center; /* Centers items horizontally for smaller screens */
+            justify-content: space-between; /* Distributes space between items */
+            gap: 2rem; /* Space between sections */
+        }
+
+        /* Media query for medium screens and up (md: breakpoint) */
+        @media (min-width: 768px) {
+            .footer {
+                flex-direction: row; /* Arranges columns horizontally on larger screens */
+                align-items: flex-start; /* Aligns items to the start of the cross axis */
+                text-align: left; /* Aligns text to the left within columns */
+                padding: 2rem 2.5rem; /* Adjust padding for medium screens */
+            }
+        }
+
+        /* Media query for large screens and up (lg: breakpoint) */
+        @media (min-width: 1024px) {
+            .footer {
+                padding: 2rem 4rem; /* Adjust padding for large screens */
+            }
+        }
+
+        /* Footer Section: Left (Logo and Contact Emails) */
+        .footer-section-left {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Centers items horizontally for smaller screens */
+            text-align: center; /* Centers text for smaller screens */
+            width: 100%; /* Takes full width on small screens */
+        }
+        @media (min-width: 768px) {
+            .footer-section-left {
+                align-items: flex-start; /* Aligns items to the start for medium screens */
+                text-align: left; /* Aligns text to the left for medium screens */
+                width: calc(100% / 3); /* Approximately 1/3 width */
+            }
+        }
+
+        .footer-logo-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .footer-logo {
+            width: 48px;
+            height: 48px;
+            border-radius: 0.75rem; /* Rounded corners for the logo */
+            background-color: #2EDC37; /* Green fill color */
+            margin-right: 0.75rem; /* Space to the right of the logo */
+            display: flex; /* For centering the paths */
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer-logo-path {
+            stroke: #000000;
+            stroke-width: 4;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        .footer-brand-name {
+            font-size: 1.5rem; /* Text-2xl */
+            font-weight: bold;
+        }
+
+        .contact-heading {
+            font-size: 1.125rem; /* Text-lg */
+            font-weight: 600; /* Font-semibold */
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-link {
+            color: #d1d5db; /* Gray-300 */
+            text-decoration: none;
+            transition-property: color;
+            transition-duration: 200ms;
+            border-radius: 0.25rem; /* Rounded corners */
+        }
+
+        .contact-link:hover {
+            color: #4ade80; /* Green-400 */
+        }
+
+        /* Footer Section: Middle (Social Media Links) */
+        .footer-section-middle {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Centers items horizontally for smaller screens */
+            text-align: center; /* Centers text for smaller screens */
+            width: 100%; /* Takes full width on small screens */
+        }
+        @media (min-width: 768px) {
+            .footer-section-middle {
+                align-items: flex-start; /* Aligns items to the start for medium screens */
+                text-align: left; /* Aligns text to the left for medium screens */
+                width: calc(100% / 3); /* Approximately 1/3 width */
+            }
+        }
+
+        .social-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.5rem;
+        }
+
+        .social-item i {
+            font-size: 1.25rem; /* Text-xl */
+            margin-right: 0.75rem; /* Space to the right of the icon */
+        }
+
+        .social-link {
+            color: #d1d5db; /* Gray-300 */
+            text-decoration: none;
+            transition-property: color;
+            transition-duration: 200ms;
+            border-radius: 0.25rem; /* Rounded corners */
+        }
+
+        .social-link:hover {
+            color: #4ade80; /* Green-400 */
+        }
+
+        /* Footer Section: Right (Phone Number) */
+        .footer-section-right {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Centers items horizontally for smaller screens */
+            text-align: center; /* Centers text for smaller screens */
+            width: 100%; /* Takes full width on small screens */
+        }
+        @media (min-width: 768px) {
+            .footer-section-right {
+                align-items: flex-end; /* Aligns items to the end for medium screens */
+                text-align: right; /* Aligns text to the right for medium screens */
+                width: calc(100% / 3); /* Approximately 1/3 width */
+            }
+        }
+
+        .phone-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .phone-container i {
+            font-size: 1.25rem; /* Text-xl */
+            margin-right: 0.75rem; /* Space to the right of the icon */
+        }
+
+        .phone-number {
+            font-size: 1.125rem; /* Text-lg */
+            font-weight: bold;
+        }
+        @media (min-width: 768px) {
+            .phone-number {
+                font-size: 1.5rem; /* Text-2xl for medium screens */
+            }
+        }
