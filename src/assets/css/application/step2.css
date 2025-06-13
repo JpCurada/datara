@@ -1,0 +1,38 @@
+/* Step 2: Personal Information Styles */
+.name-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr auto;
+    gap: 20px;
+}
+
+.birthday-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 20px;
+}
+
+.radio-group {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.radio-group input[type="radio"] {
+    width: auto;
+    margin-right: 8px;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .name-grid,
+    .birthday-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+}

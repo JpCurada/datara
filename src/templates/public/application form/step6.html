@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head_title %}Application Form{% endblock head_title %}
+
+{% block content %}
+<!-- Step 6: Demographic -->
+<div class="step-content" id="step-6">
+    <div class="step-header">
+        <h2>Demographic</h2>
+    </div>
+
+    <div class="form-section">
+        <div class="demographic-grid">
+            <div class="demographic-group">
+                <h3>Select all that apply:</h3>
+                <div class="checkbox-group vertical">
+                    <input type="checkbox" id="unemployed" name="demographic" value="unemployed" checked>
+                    <label for="unemployed">Unemployed</label>
+                    
+                    <input type="checkbox" id="underemployed" name="demographic" value="underemployed">
+                    <label for="underemployed">Underemployed</label>
+                    
+                    <input type="checkbox" id="poverty-line" name="demographic" value="poverty-line" checked>
+                    <label for="poverty-line">Living below the poverty line</label>
+                    
+                    <input type="checkbox" id="refugees" name="demographic" value="refugees">
+                    <label for="refugees">Refugees of war/environmental disaster</label>
+                    
+                    <input type="checkbox" id="disabilities" name="demographic" value="disabilities">
+                    <label for="disabilities">People with disabilities</label>
+                    
+                    <input type="checkbox" id="students-16-26" name="demographic" value="students-16-26" checked>
+                    <label for="students-16-26">Students aged 16-26</label>
+                    
+                    <input type="checkbox" id="working-student" name="demographic" value="working-student">
+                    <label for="working-student">Working Student</label>
+                    
+                    <input type="checkbox" id="nonprofit-researchers" name="demographic" value="nonprofit-researchers">
+                    <label for="nonprofit-researchers">Nonprofit Research Scientists</label>
+                </div>
+            </div>
+
+            <div class="demographic-group">
+                <h3>Devices available</h3>
+                <p>Select all that apply:</p>
+                <div class="checkbox-group vertical">
+                    <input type="checkbox" id="smartphone" name="devices" value="smartphone" checked>
+                    <label for="smartphone">Smartphone</label>
+                    
+                    <input type="checkbox" id="tablet" name="devices" value="tablet">
+                    <label for="tablet">Tablet</label>
+                    
+                    <input type="checkbox" id="laptop" name="devices" value="laptop" checked>
+                    <label for="laptop">Laptop</label>
+                    
+                    <input type="checkbox" id="desktop" name="devices" value="desktop">
+                    <label for="desktop">Desktop/PC</label>
+                </div>
+            </div>
+
+            <div class="demographic-group">
+                <h3>Internet Connectivity</h3>
+                <p>Select all that apply:</p>
+                <div class="checkbox-group vertical">
+                    <input type="checkbox" id="mobile-data" name="internet" value="mobile-data" checked>
+                    <label for="mobile-data">Mobile Data</label>
+                    
+                    <input type="checkbox" id="wifi" name="internet" value="wifi" checked>
+                    <label for="wifi">WiFi</label>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

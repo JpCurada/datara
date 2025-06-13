@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head_title %}Application Form{% endblock head_title %}
+
+{% block content %}
+<!-- Step 3: Address -->
+<div class="step-content" id="step-3">
+    <div class="step-header">
+        <h2>Address</h2>
+    </div>
+
+    <div class="form-section">
+        <div class="address-grid">
+            <div class="input-group">
+                <label for="country">Country</label>
+                <input type="text" id="country" name="country" value="PHILIPPINES" readonly>
+            </div>
+            <div class="input-group">
+                <label for="region">Region</label>
+                <input type="text" id="region" name="region" value="NATIONAL CAPITAL REGION" readonly>
+            </div>
+            <div class="input-group">
+                <label for="province">Province</label>
+                <input type="text" id="province" name="province" value="METRO MANILA" readonly>
+            </div>
+        </div>
+
+        <div class="address-grid">
+            <div class="input-group">
+                <label for="city">City</label>
+                <input type="text" id="city" name="city" value="QUEZON CITY" readonly>
+            </div>
+            <div class="input-group">
+                <label for="district">District</label>
+                <input type="text" id="district" name="district" value="DISTRICT 1" readonly>
+            </div>
+            <div class="input-group">
+                <label for="barangay">Barangay</label>
+                <input type="text" id="barangay" name="barangay" value="BARANGAY SAN ANTONIO" readonly>
+            </div>
+        </div>
+
+        <div class="address-grid">
+            <div class="input-group">
+                <label for="street">Street/Subdivision/Purok</label>
+                <input type="text" id="street" name="street">
+            </div>
+            <div class="input-group">
+                <label for="house-number">House Number/Building Name/ House Floor</label>
+                <input type="text" id="house-number" name="house-number">
+            </div>
+            <div class="input-group">
+                <label for="zip-code">Zip Code</label>
+                <input type="text" id="zip-code" name="zip-code">
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

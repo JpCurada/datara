@@ -1,0 +1,81 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head_title %}Application Form{% endblock head_title %}
+
+{% block content %}
+<!-- Step 2: Personal Information -->
+<div class="step-content" id="step-2">
+    <div class="step-header">
+        <h2>Personal Information</h2>
+    </div>
+
+    <div class="form-section">
+        <h3>Full Name</h3>
+        <div class="name-grid">
+            <div class="input-group">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first-name" placeholder="JUAN">
+            </div>
+            <div class="input-group">
+                <label for="middle-name">Middle Name</label>
+                <input type="text" id="middle-name" name="middle-name" placeholder="ABRAHAM">
+            </div>
+            <div class="input-group">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name" placeholder="DELA CRUZ">
+            </div>
+            <div class="input-group">
+                <label for="suffix">Suffix</label>
+                <input type="text" id="suffix" name="suffix" placeholder="N/A">
+                <small>N/A if unavailable.</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-section">
+        <h3>Birthday</h3>
+        <div class="birthday-grid">
+            <div class="input-group">
+                <label for="birth-month">Month</label>
+                <select id="birth-month" name="birth-month">
+                    <option value="JANUARY">JANUARY</option>
+                    <option value="FEBRUARY">FEBRUARY</option>
+                    <option value="MARCH">MARCH</option>
+                    <option value="APRIL">APRIL</option>
+                    <option value="MAY">MAY</option>
+                    <option value="JUNE">JUNE</option>
+                    <option value="JULY">JULY</option>
+                    <option value="AUGUST">AUGUST</option>
+                    <option value="SEPTEMBER">SEPTEMBER</option>
+                    <option value="OCTOBER">OCTOBER</option>
+                    <option value="NOVEMBER">NOVEMBER</option>
+                    <option value="DECEMBER">DECEMBER</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="birth-day">Day</label>
+                <input type="number" id="birth-day" name="birth-day" min="1" max="31" placeholder="01">
+            </div>
+            <div class="input-group">
+                <label for="birth-year">Year</label>
+                <input type="number" id="birth-year" name="birth-year" min="1900" max="2024" placeholder="2005">
+            </div>
+        </div>
+    </div>
+
+    <div class="form-section">
+        <h3>Gender</h3>
+        <div class="radio-group">
+            <input type="radio" id="male" name="gender" value="male" checked>
+            <label for="male">Male</label>
+            
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            
+            <input type="radio" id="others" name="gender" value="others">
+            <label for="others">Others: <input type="text" placeholder="____"></label>
+        </div>
+    </div>
+</div>
+{% endblock content %}

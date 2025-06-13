@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head_title %}Application Form{% endblock head_title %}
+
+{% block content %}
+<!-- Step 1: Partner Organization -->
+<div class="step-content active" id="step-1">
+    <div class="step-header">
+        <h2>Data Privacy and Agreement</h2>
+    </div>
+    
+    <div class="privacy-section">
+        <p>By using this application, you agree to the collection and use of your information as described in our Privacy Policy.</p>
+        
+        <p>We only collect the necessary data to:</p>
+        <ul>
+            <li>Provide and improve our services</li>
+            <li>Respond to your inquiries</li>
+            <li>Keep things secure and running smoothly</li>
+        </ul>
+        
+        <p>We do not sell or share your data with third parties for marketing.</p>
+        
+        <p>Before continuing, please confirm:</p>
+        <div class="checkbox-group">
+            <input type="checkbox" id="privacy-agree" name="privacy-agree">
+            <label for="privacy-agree">I have read and agree to the Privacy Policy.</label>
+        </div>
+        
+        <p>You can view the full policy <a href="#">here</a> or by clicking the link at the bottom of the page.</p>
+    </div>
+
+    <div class="partner-section">
+        <h3>Partner Organization</h3>
+        <p>Select one partner organization you are in:</p>
+        <p class="help-text">If you are in two or more partner organization, select the one who is most active.</p>
+        
+        <div class="input-group">
+            <input type="text" id="partner-org" name="partner-org" placeholder="Google Developers Group - PUP Sta. Mesa" readonly>
+        </div>
+    </div>
+
+    <div class="email-section">
+        <h3>E-Mail Address</h3>
+        <p>Enter your e-mail address:</p>
+        <p class="help-text">Strictly one e-mail address per applicant!</p>
+        
+        <div class="input-group">
+            <input type="email" id="email" name="email" placeholder="juandelacruz@gmail.com">
+        </div>
+    </div>
+</div>
+{% endblock content %}
